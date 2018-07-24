@@ -2,6 +2,9 @@
 
 Stripeの処理系で使いまわしたいものをまとめたやつ。
 
+## Requirement
+You should use Node8.10.0 or later
+
 ## subscriptions
 
 ### RenewalReminder
