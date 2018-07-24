@@ -1,0 +1,16 @@
+{
+  "name": "stripe-utils",
+  "version": "1.0.0",
+  "description": "utility functions for stripe",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Hidetaka Okamoto <info@wp-kyoto.net> (https://wp-kyoto.net)",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.22.2",
+    "stripe": "^6.3.0"
+  }
+}
