@@ -28,3 +28,9 @@ const exec = async () => {
 }
 exec()
 ```
+
+## Charge
+
+### GetDeclineCode
+Decline codeから説明文を取ってきます。
+参照元: https://stripe.com/docs/declines/codes
