@@ -34,3 +34,14 @@ exec()
 ### GetDeclineCode
 Decline codeから説明文を取ってきます。
 参照元: https://stripe.com/docs/declines/codes
+
+```
+const { getDeclineDescription } = require('stripe-utils')
+const { code } = getDeclineDescription("try_again_later")
+console.log(code)
+
+{
+    "description": "The card has been declined for an unknown reason.", 
+    "nextSteps": "Ask the customer to attempt the payment again. If subsequent payments are declined, the customer should contact their card issuer for more information."
+}
+```
