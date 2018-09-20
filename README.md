@@ -1,6 +1,6 @@
 ## Stripe utilities
 
-Stripeの処理系で使いまわしたいものをまとめたやつ。
+Utilify functions to develop Stripe integration scrips in Node.js
 
 ## Requirement
 You should use Node8.10.0 or later
@@ -8,7 +8,8 @@ You should use Node8.10.0 or later
 ## subscriptions
 
 ### RenewalReminder
-年額プランの有効期限まであとX日になったsubscriptionだけをピックアップします。
+
+Get list subscriptions that the remain date is less than X day.
 
 ```
 const stripeUtils = require('stripe-utils')
@@ -32,8 +33,8 @@ exec()
 ## Charge
 
 ### GetDeclineCode
-Decline codeから説明文を取ってきます。
-参照元: https://stripe.com/docs/declines/codes
+Get declines description and next steps bt decline_code
+Ref: https://stripe.com/docs/declines/codes
 
 ```
 const { getDeclineDescription } = require('stripe-utils')

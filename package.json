@@ -1,12 +1,21 @@
 {
   "name": "stripe-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "utility functions for stripe",
   "main": "index.js",
   "scripts": {
     "test": "mocha tests/unit/ -R spec --recursive"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/megumiteam/stripe-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/megumiteam/stripe-utils/issues"
+  },
+  "keywords": [
+    "stripe"
+  ],
   "author": "Hidetaka Okamoto <info@wp-kyoto.net> (https://wp-kyoto.net)",
   "license": "MIT",
   "engines": {
