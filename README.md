@@ -46,3 +46,7 @@ console.log(code)
     "nextSteps": "Ask the customer to attempt the payment again. If subsequent payments are declined, the customer should contact their card issuer for more information."
 }
 ```
+
+## Contributors
+
+- [emaildano](https://github.com/emaildano)
