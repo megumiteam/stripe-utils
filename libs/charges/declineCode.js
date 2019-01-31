@@ -7,8 +7,8 @@ const declineCodes = {
     "nextUserAction": "Please try again. If it still cannot be processed, the please contact your card issuer.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "支払いは承認できません。",
+        "nextUserAction": "もう一度やり直してください。それでも処理できない場合は、カード発行会社にお問い合わせください。"
       }
     }
   },
@@ -18,8 +18,8 @@ const declineCodes = {
     "nextUserAction": "Please contact your card issuer for more information.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "カードは未知の理由で拒否されました。",
+        "nextUserAction": "詳しくはカード発行会社にお問い合わせください。"
       }
     }
   },
@@ -29,8 +29,8 @@ const declineCodes = {
     "nextUserAction": "Your card issuer may not support this type of purchase, please contact your card issues for more information.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "カードはこのタイプの購入をサポートしません。",
+        "nextUserAction": "カード発行者はこのタイプの購入をサポートしていない可能性があります。詳細については、カード発行会社にお問い合わせください。"
       }
     }
   },
@@ -40,8 +40,8 @@ const declineCodes = {
     "nextUserAction": "Please contact your card issuer for more information.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "このカードの残高またはクレジット制限を超えました。",
+        "nextUserAction": "詳しくはカード発行会社にお問い合わせください。"
       }
     }
   },
@@ -51,8 +51,8 @@ const declineCodes = {
     "nextUserAction": "Please contact your card issuer to verify this type of currency can be used for this payment.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "カードは指定された通貨をサポートしていません。",
+        "nextUserAction": "この支払いにこのタイプの通貨が使用できることを確認するには、カード発行会社に連絡してください。"
       }
     }
   },
@@ -62,8 +62,8 @@ const declineCodes = {
     "nextUserAction": "Please contact your card issuer for more information.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "カードは未知の理由で拒否されました。",
+        "nextUserAction": "詳しくはカード発行会社にお問い合わせください。"
       }
     }
   },
@@ -73,8 +73,8 @@ const declineCodes = {
     "nextUserAction": "Please contact your card issuer for more information.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "カードは未知の理由で拒否されました。",
+        "nextUserAction": "詳しくはカード発行会社にお問い合わせください。"
       }
     }
   },
@@ -84,8 +84,8 @@ const declineCodes = {
     "nextUserAction": "Check to see if a recent payment already exists.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "ごく最近、同一の金額とクレジットカード情報を使用した取引が送信されました。",
+        "nextUserAction": "最近の支払いが既に存在するかどうかを確認してください。"
       }
     }
   },
@@ -95,8 +95,8 @@ const declineCodes = {
     "nextUserAction": "Please use another card.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "カードは期限切れです。",
+        "nextUserAction": "別のカードを使用してください。"
       }
     }
   },
@@ -106,8 +106,8 @@ const declineCodes = {
     "nextUserAction": "Please contact your card issuer for more information.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "不正と思われるため、支払いは拒否されました。",
+        "nextUserAction": "詳しくはカード発行会社にお問い合わせください。"
       }
     }
   },
@@ -117,8 +117,8 @@ const declineCodes = {
     "nextUserAction": "Please contact your card issuer for more information.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "カードは未知の理由で拒否されました。",
+        "nextUserAction": "詳しくはカード発行会社にお問い合わせください。"
       }
     }
   },
@@ -128,8 +128,8 @@ const declineCodes = {
     "nextUserAction": "Please check your card numbers and try again. If it still cannot be processed, the please contact your card issuer.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "カード番号が正しくありません。",
+        "nextUserAction": "カード番号を確認してもう一度やり直してください。それでも処理できない場合は、カード発行会社にお問い合わせください。"
       }
     }
   },
@@ -139,8 +139,8 @@ const declineCodes = {
     "nextUserAction": "Please check your card numbers and try again. If it still cannot be processed, the please contact your card issuer.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "CVC番号が正しくありません。",
+        "nextUserAction": "CSC番号を確認してもう一度やり直してください。それでも処理できない場合は、カード発行会社にお問い合わせください。"
       }
     }
   },
@@ -150,8 +150,8 @@ const declineCodes = {
     "nextUserAction": "Please check your PIN and try again. If it still cannot be processed, the please contact your card issuer.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "PINコードが正しくありません。",
+        "nextUserAction": "PINコードを確認してもう一度やり直してください。それでも処理できない場合は、カード発行会社にお問い合わせください。"
       }
     }
   },
@@ -161,8 +161,8 @@ const declineCodes = {
     "nextUserAction": "Please try again using the correct ZIP/postal code.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "郵便番号が正しくありません。",
+        "nextUserAction": "正しい郵便番号を使用してもう一度お試しください。"
       }
     }
   },
@@ -172,8 +172,8 @@ const declineCodes = {
     "nextUserAction": "Please try again using an alternative payment method.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "カードの購入に必要な資金が不足しています。",
+        "nextUserAction": "別のお支払い方法を使用してもう一度お試しください。"
       }
     }
   },
@@ -183,8 +183,8 @@ const declineCodes = {
     "nextUserAction": "Please contact your card issuer for more information.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "カード、またはカードが接続されているアカウントが無効です。",
+        "nextUserAction": "詳しくはカード発行会社にお問い合わせください。"
       }
     }
   },
@@ -194,8 +194,8 @@ const declineCodes = {
     "nextUserAction": "Please contact your card issuer for more information.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "支払い金額が無効であるか、許可されている金額を超えています。",
+        "nextUserAction": "詳しくはカード発行会社にお問い合わせください。"
       }
     }
   },
@@ -205,8 +205,8 @@ const declineCodes = {
     "nextUserAction": "Please try again using the correct CVC.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "CVC番号が正しくありません。",
+        "nextUserAction": "正しいCVCを使用してもう一度やり直してください。"
       }
     }
   },
@@ -216,8 +216,8 @@ const declineCodes = {
     "nextUserAction": "Please try again using the correct expiration date.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "有効期限が無効です。",
+        "nextUserAction": "正しい有効期限を入力してもう一度お試しください。"
       }
     }
   },
@@ -227,8 +227,8 @@ const declineCodes = {
     "nextUserAction": "Please try again using the correct card number.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "カード番号が正しくありません。",
+        "nextUserAction": "正しいカード番号を使用してもう一度やり直してください。"
       }
     }
   },
@@ -238,8 +238,8 @@ const declineCodes = {
     "nextUserAction": "Please try again using the correct card PIN.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "PINコードが正しくありません。",
+        "nextUserAction": "正しいPINコードを使用してもう一度やり直してください。"
       }
     }
   },
@@ -249,8 +249,8 @@ const declineCodes = {
     "nextUserAction": "Please try again. If it still cannot be processed, the please contact your card issuer.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "カード発行者に連絡できなかったため、支払いを承認できませんでした。",
+        "nextUserAction": "もう一度やり直してください。それでも処理できない場合は、カード発行会社にお問い合わせください。"
       }
     }
   },
@@ -260,8 +260,8 @@ const declineCodes = {
     "nextUserAction": "Please contact your card issuer for more information.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "カードは未知の理由で拒否されました。",
+        "nextUserAction": "詳しくはカード発行会社にお問い合わせください。"
       }
     }
   },
@@ -271,8 +271,8 @@ const declineCodes = {
     "nextUserAction": "Please contact your card issuer for more information.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "カードは未知の理由で拒否されました。",
+        "nextUserAction": "詳しくはカード発行会社にお問い合わせください。"
       }
     }
   },
@@ -282,8 +282,8 @@ const declineCodes = {
     "nextUserAction": "Please contact your card issuer for more information.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "カード、またはカードが接続されているアカウントが無効です。",
+        "nextUserAction": "詳しくはカード発行会社にお問い合わせください。"
       }
     }
   },
@@ -293,8 +293,8 @@ const declineCodes = {
     "nextUserAction": "Please contact your card issuer for more information.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "カードは未知の理由で拒否されました。",
+        "nextUserAction": "詳しくはカード発行会社にお問い合わせください。"
       }
     }
   },
@@ -304,8 +304,8 @@ const declineCodes = {
     "nextUserAction": "Please contact your card issuer for more information.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "支払いは許可されていません。",
+        "nextUserAction": "詳しくはカード発行会社にお問い合わせください。"
       }
     }
   },
@@ -315,8 +315,8 @@ const declineCodes = {
     "nextUserAction": "Please contact your card issuer for more information.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "カードでこの支払いを行うことはできません（紛失または盗難にあったと報告されている可能性があります）。",
+        "nextUserAction": "詳しくはカード発行会社にお問い合わせください。"
       }
     }
   },
@@ -326,7 +326,7 @@ const declineCodes = {
     "nextUserAction": "Please use another card or method of payment.",
     "translations": {
       "ja_JP": {
-        "description": "",
+        "description": "カードは未知の理由で拒否されました。",
         "nextUserAction": ""
       }
     }
@@ -337,8 +337,8 @@ const declineCodes = {
     "nextUserAction": "Please try again. If it still cannot be processed, the please contact your card issuer.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "カードの処理中にエラーが発生しました。",
+        "nextUserAction": "もう一度やり直してください。それでも処理できない場合は、カード発行会社にお問い合わせください。"
       }
     }
   },
@@ -348,8 +348,8 @@ const declineCodes = {
     "nextUserAction": "Please try again. If it still cannot be processed, the please contact your card issuer.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "原因不明のため、発行者が支払いを処理できませんでした。",
+        "nextUserAction": "もう一度やり直してください。それでも処理できない場合は、カード発行会社にお問い合わせください。"
       }
     }
   },
@@ -359,8 +359,8 @@ const declineCodes = {
     "nextUserAction": "Please contact your card issuer for more information.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "カードでこの支払いを行うことはできません（紛失または盗難にあったと報告されている可能性があります）。",
+        "nextUserAction": "詳しくはカード発行会社にお問い合わせください。"
       }
     }
   },
@@ -370,8 +370,8 @@ const declineCodes = {
     "nextUserAction": "Please contact your card issuer for more information.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "カードは未知の理由で拒否されました。",
+        "nextUserAction": "詳しくはカード発行会社にお問い合わせください。"
       }
     }
   },
@@ -381,8 +381,8 @@ const declineCodes = {
     "nextUserAction": "Please contact your card issuer for more information.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "カードは未知の理由で拒否されました。",
+        "nextUserAction": "詳しくはカード発行会社にお問い合わせください。"
       }
     }
   },
@@ -392,8 +392,8 @@ const declineCodes = {
     "nextUserAction": "Please contact your card issuer for more information.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "カードは未知の理由で拒否されました。",
+        "nextUserAction": "詳しくはカード発行会社にお問い合わせください。"
       }
     }
   },
@@ -403,8 +403,8 @@ const declineCodes = {
     "nextUserAction": "Please contact your card issuer for more information.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "カードは未知の理由で拒否されました。",
+        "nextUserAction": "詳しくはカード発行会社にお問い合わせください。"
       }
     }
   },
@@ -414,8 +414,8 @@ const declineCodes = {
     "nextUserAction": "Please contact your card issuer for more information.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "カードは未知の理由で拒否されました。",
+        "nextUserAction": "詳しくはカード発行会社にお問い合わせください。"
       }
     }
   },
@@ -425,8 +425,8 @@ const declineCodes = {
     "nextUserAction": "Please contact your card issuer for more information.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "カードは未知の理由で拒否されました。",
+        "nextUserAction": "詳しくはカード発行会社にお問い合わせください。"
       }
     }
   },
@@ -436,8 +436,8 @@ const declineCodes = {
     "nextUserAction": "A genuine card must be used to make a payment.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "Stripeテストカード番号を使用しました。",
+        "nextUserAction": "支払いには本物のカードを使用する必要があります。"
       }
     }
   },
@@ -447,8 +447,8 @@ const declineCodes = {
     "nextUserAction": "Please contact your card issuer for more information.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "カードは未知の理由で拒否されました。",
+        "nextUserAction": "詳しくはカード発行会社にお問い合わせください。"
       }
     }
   },
@@ -458,8 +458,8 @@ const declineCodes = {
     "nextUserAction": "Please try again. If it still cannot be processed, the please contact your card issuer.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "カードは未知の理由で拒否されました。",
+        "nextUserAction": "もう一度やり直してください。それでも処理できない場合は、カード発行会社にお問い合わせください。"
       }
     }
   },
@@ -469,8 +469,8 @@ const declineCodes = {
     "nextUserAction": "Please use another card or contact your card issuer for more information.",
     "translations": {
       "ja_JP": {
-        "description": "",
-        "nextUserAction": ""
+        "description": "このカードの残高またはクレジット制限を超えました。",
+        "nextUserAction": "別のカードを使用するか、カード発行会社にお問い合わせください。"
       }
     }
   }

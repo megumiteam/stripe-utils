@@ -20,8 +20,8 @@ describe('./libs/charge/declineCode.js', () => {
           "nextUserAction": "Please contact your card issuer for more information.",
           "translations": {
             "ja_JP": {
-              "description": "",
-              "nextUserAction": ""
+              "description": "カードは未知の理由で拒否されました。",
+              "nextUserAction": "詳しくはカード発行会社にお問い合わせください。"
             }
           }
         }
