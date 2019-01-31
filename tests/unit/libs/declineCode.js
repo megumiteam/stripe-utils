@@ -16,7 +16,14 @@ describe('./libs/charge/declineCode.js', () => {
         docVersion: '2018-09-20',
         code: {
           "description": "The card has been declined for an unknown reason.",
-          "nextSteps": "The customer needs to contact their card issuer for more information."
+          "nextSteps": "The customer needs to contact their card issuer for more information.",
+          "nextUserAction": "Please contact your card issuer for more information.",
+          "translations": {
+            "ja_JP": {
+              "description": "",
+              "nextUserAction": ""
+            }
+          }
         }
       })
     })
