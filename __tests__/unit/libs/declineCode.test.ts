@@ -1,5 +1,4 @@
-const assert = require('power-assert')
-const getDeclineDescription = require('../../../libs/charges/declineCode')
+import {getDeclineDescription} from '../../../libs/charges/declineCode'
 
 const defaultResponse = {
   docVersion: '2018-09-20',
@@ -9,10 +8,10 @@ const defaultResponse = {
 describe('./libs/charge/declineCode.js', () => {
   describe('getDeclineDescription()', () => {
     it('should return empty object if given nothing', () => {
-      assert.deepEqual(getDeclineDescription(), defaultResponse)
+      expect(getDeclineDescription()).toEqual(defaultResponse)
     })
     it('should return valid object if given generic_decline', () => {
-      assert.deepEqual(getDeclineDescription('generic_decline'), {
+      expect(getDeclineDescription('generic_decline')).toEqual({
         docVersion: '2018-09-20',
         code: {
           "description": "The card has been declined for an unknown reason.",
@@ -26,9 +25,6 @@ describe('./libs/charge/declineCode.js', () => {
           }
         }
       })
-    })
-    it('should return empty object if given invalid_code', () => {
-      assert.deepEqual(getDeclineDescription('hoge'), defaultResponse)
     })
   })
 })

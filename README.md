@@ -11,13 +11,11 @@ You should use Node8.10.0 or later
 
 Get list subscriptions that the remain date is less than X day.
 
-```
-const stripeUtils = require('stripe-utils')
+```javascript
+const { RenewalReminder } = require('stripe-utils')
 const stripe = require("stripe")(
     "sk_test_XXXXXXXX"
 )
-const { RenewalReminder } = stripeUtils.subscriptions
-
 const exec = async () => {
     const targetDate = 30
     const worker = new RenewalReminder(stripe)
@@ -36,7 +34,7 @@ exec()
 Get declines description and next steps bt decline_code
 Ref: https://stripe.com/docs/declines/codes
 
-```
+```javascript
 const { getDeclineDescription } = require('stripe-utils')
 const { code } = getDeclineDescription("try_again_later")
 console.log(code)

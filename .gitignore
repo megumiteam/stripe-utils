@@ -14,3 +14,5 @@ example.json
 
 test.js
 test.json
+.rpt2_cache/
+dist/

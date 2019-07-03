@@ -1,23 +1,29 @@
-const moment = require('moment')
+import moment from 'moment'
+import Stripe from 'stripe'
 
-class RenewalReminder {
-  constructor (stripe, today = moment()) {
+type Plans = Array<Stripe.plans.IPlan>
+type Subscriptions = Array<Stripe.subscriptions.ISubscription>
+
+export class RenewalReminder {
+  private stripe: Stripe
+  private today: moment.Moment
+  public constructor (stripe: Stripe, today: moment.Moment = moment()) {
     this.today = today
     this.stripe = stripe
   }
-  async getYearlyPlans () {
+  private async getYearlyPlans (): Promise<Plans> {
     const plans = await this.stripe.plans.list({
       limit: 100
     })
     const yearlyPlans = plans.data.filter(plan => plan.interval === 'year')
     return yearlyPlans
   }
-  getLastSubscriptionId (subscription) {
+  private getLastSubscriptionId (subscription: Stripe.IList<Stripe.subscriptions.ISubscription>): string {
     const length = subscription.data.length
     const last = subscription.data[length - 1]
     return last.id
   }
-  async getSubscription (planId, lastId = '') {
+  private async getSubscription (planId: string, lastId: string = ''): Promise<Subscriptions> {
     const param = this.getListSubscriptionParam(planId, lastId)
     const subscriptions = await this.stripe.subscriptions.list(param)
     if (!subscriptions.has_more) {
@@ -30,42 +36,41 @@ class RenewalReminder {
       return lists
     }
   }
-  async getSubscriptionsByPlans (plans) {
-    const subscriptions = []
+  private async getSubscriptionsByPlans (plans: Plans): Promise<Subscriptions> {
+    const subscriptions: Subscriptions = []
     await Promise.all(plans.map(async plan => {
       const data = await this.getSubscription(plan.id)
       Array.prototype.push.apply(subscriptions, data)
     }))
     return subscriptions
   }
-  async getNotificationTargetSubscription (targetDate = 30) {
-    const today = moment()
+  public async getNotificationTargetSubscription (targetDate: number = 30): Promise<Subscriptions> {
     // 年間プラン取得
     const plans = await this.getYearlyPlans()
     // プランについてるsubscription取得
     const subscriptions = await this.getSubscriptionsByPlans(plans)
     // あと${targetDate}日のものをピックアップ
-    const targets = this.filterSubscriptions(subscriptions, today, targetDate)
+    const targets = this.filterSubscriptions(subscriptions, targetDate)
     return targets
   }
-  filterSubscriptions (subscriptions, today = moment(), targetDate = 30) {
+  private filterSubscriptions (subscriptions: Subscriptions, targetDate: number = 30): Subscriptions {
     const targets = subscriptions.filter(subscription => {
       const end = moment.unix(subscription.current_period_end)
-      const dateRemained = end.diff(today, 'day')
+      const dateRemained = end.diff(this.today, 'day')
       return dateRemained === targetDate
     })
     return targets
   }
-  getListSubscriptionParam (planId, lastId = '') {
-    const param = {
+  private getListSubscriptionParam (planId: string, lastId: string = ''): Stripe.subscriptions.ISubscriptionListOptions {
+    const param: Stripe.subscriptions.ISubscriptionListOptions = {
       plan: planId,
       limit: 100,
       created: {
-        lte: moment().subtract(335, 'days').unix()
+        lte: String(moment().subtract(335, 'days').unix())
       }
     }
     if (lastId) param.starting_after = lastId
     return param
   }
 }
-module.exports = RenewalReminder
+export default RenewalReminder
