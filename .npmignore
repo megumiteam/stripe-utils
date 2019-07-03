@@ -12,3 +12,5 @@ libs/
 .idea/
 examples/
 .rpt2_cache/
+test.js
+test.json
