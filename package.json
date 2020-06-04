@@ -23,7 +23,7 @@
   },
   "dependencies": {
     "moment": "^2.22.2",
-    "stripe": "^6.3.0"
+    "stripe": "^8.0.0"
   },
   "devDependencies": {
     "mocha": "^5.2.0",
